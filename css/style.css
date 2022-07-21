@@ -49,6 +49,11 @@ h1{
     padding: 10px;
     margin-right: 90px;
 }
+#WatchLive button:hover{ 
+    background-color: #fff;
+    color: red;
+    transition-duration: 0.4s;
+}
 
 
 /* ==================== Blog Section ==================== */
@@ -60,20 +65,14 @@ h1{
     padding:20px;
     margin: 5%  8%;
 }
-
-/* #button-common-1{
-    margin-top:10px;
+#blog-tablet{
+    display: none;
 }
 
-#button-common-1 button{ 
-    border: none;
-    color: rgb(255, 255, 255);
-    background-color:rgb(221, 0, 0); 
-    font-size: 15px;
-    border-radius: 5px;
-    padding: 10px;
-    margin-right: 90px;
-} */
+#viewall-tablet{
+    display: none;
+}
+
 
 /* ==================== Footer Section ==================== */
 
@@ -104,6 +103,13 @@ footer h2{
     font-size: 10px;
     color: rgb(127, 127, 127);
 }
+.social-icon-desktop h5 a{
+    font-size: 15px;
+    color: #fff;
+}
+.wrapper-tablet{
+    display: none;
+}
 
 
 /* ==================== Responsive Section ==================== */
@@ -130,8 +136,78 @@ footer h2{
     #banner-image{
         margin-top: 40px;
     }
+
+   
+
+    /* Blog Tablet */
+    #blog{
+        /* display: block; */
+        display: none;
+    }
+
+    #blog-tablet{
+        margin-left: 125px;
+        display: block;
+    }
+    #blog-tablet button{
+        display: inline;
+        border-radius: 15px;
+        margin-left: 30px;
+        width: 190px;
+        height: 75px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: #fff;
+        border: 1px solid rgb(127, 127, 127);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .flex-container-2 > div {
+        margin: 35px 20px 0px 12px;
+        width: 320px;
+    }
+    #viewall-tablet{
+        display: block;
+    }
+    #viewall-tablet button{
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        margin-top: 5%;
+        margin-left: 41%;
+        width: 150px;
+        border: none;
+    }
+    footer{
+        margin-top: 80px;
+        height: 350px
+    }
+    .wrapper{
+        display: none;
+    }
+    .wrapper-tablet{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 90%;        
+        margin-left: 300px;
+        margin-top: 10px;
+    }
+    .wrapper-tablet h5{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: rgb(127, 127, 127);
+        font-size: 13px;
+    }
+    .wrapper-tablet .social-icon-desktop h5 a{
+        font-size: 15px;
+        color: #fff;
+    }
+
+
 }
 
+
+/* Responsive For Mobile */
 
 @media screen and (max-width: 600px) {
     /* .grid-container {
