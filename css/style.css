@@ -72,6 +72,9 @@ h1{
 #viewall-tablet{
     display: none;
 }
+#blog-tablet .flex-container-3{
+    display: none;
+}
 
 
 /* ==================== Footer Section ==================== */
@@ -102,6 +105,9 @@ footer h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     color: rgb(127, 127, 127);
+}
+.social-icon-desktop{
+    margin-left: 35%;
 }
 .social-icon-desktop h5 a{
     font-size: 15px;
@@ -148,6 +154,9 @@ footer h2{
     #blog-tablet{
         margin-left: 125px;
         display: block;
+    }
+    #blog-tablet .flex-container-3{
+        display: none;
     }
     #blog-tablet button{
         display: inline;
@@ -250,7 +259,49 @@ footer h2{
     .another-line{
         grid-column-start:1;
     }
+
+    #blog-tablet button {
+        margin-top: 10px;
+    }
+
+    #blog-tablet .flex-container-2{
+        display: none;
+    }
+    #blog-tablet .flex-container-3{
+        display: block;
+    }
+    #blog-tablet .flex-container-3 .card-2{
+        width: 72%;
+        margin: 21px 0px 0px 14px;
+    }
+
+    #viewall-tablet{
+        display: none;
+    }
+    footer{
+        margin-top: 80px;
+        height: 670px
+    }
+    
+    .wrapper-tablet{
+        display: none;
+    }
+    .wrapper-tablet .social-icon-desktop{
+        display: none;
+    }
+   
+    .wrapper{
+        /* grid-template-columns: repeat(4, 1fr); */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem;
+        margin-left: 15%;
+    }
+    .social-icon-desktop{
+        margin-left: 15%;
+    }
 }
+
 
 
 
