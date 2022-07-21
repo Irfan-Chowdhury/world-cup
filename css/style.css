@@ -1,0 +1,215 @@
+/* Banner */
+/* ==================== Banner Section ==================== */
+
+#banner{
+    background-color: rgb(22, 22, 22);
+    height:420px;
+    border: 1px solid #1a1716;
+    border-radius:25px;
+    padding:20px;
+    margin: 5%  8%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+
+.grid-item {
+    text-align:justify;
+    padding-left: 50px;
+}
+
+h1{
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+#banner p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 13px;
+    margin-top: -20px;
+}
+
+#WatchLive{
+    margin-top:10px;
+}
+
+#WatchLive button{ 
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color:rgb(221, 0, 0); 
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 90px;
+}
+
+
+/* ==================== Blog Section ==================== */
+
+#blog{
+    height:420px;
+    /* border: 1px solid #1a1716; */
+    /* border-radius:25px; */
+    padding:20px;
+    margin: 5%  8%;
+}
+
+/* #button-common-1{
+    margin-top:10px;
+}
+
+#button-common-1 button{ 
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color:rgb(221, 0, 0); 
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 90px;
+} */
+
+/* ==================== Footer Section ==================== */
+
+footer{
+    background-color: rgb(22, 22, 22);
+    /* background-color:aqua; */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    height:250px;
+    margin-top: 500px;
+}
+
+footer h2{
+    font-size: 35px;
+    padding-top: 50px;
+    /* padding: 120px 0px; */
+} 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 60%;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+.wrapper h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: rgb(127, 127, 127);
+}
+
+
+/* ==================== Responsive Section ==================== */
+
+
+/* Responsive For Tab */
+@media screen and (max-width: 992px) {
+    /* .grid-container {
+        background-color: #2196F3;
+    } */
+    #banner{
+        height: 460px;
+    }
+    #banner p{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.8;
+        font-size: 15px;
+        margin-top: -20px;
+    }
+    #WatchLive button{ 
+        font-size: 20px;
+        padding: 25px 35px;
+    }
+    #banner-image{
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    /* .grid-container {
+        background-color: #f4392f;
+        text-align: center;
+    } */
+    #banner{
+        height: 944px;
+    }
+    h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    #banner p {
+        font-size: 14px;
+        margin-top: -100px;
+    }
+    .grid-item {
+        text-align: center;
+    }
+    .grid-item p{
+        visibility: hidden;
+    }
+    .grid-item p:after{
+        font-size: 27px;
+        content: 'Contrary to popular belief, is not simply random text';
+        visibility: visible;
+    }
+    .grid-item {
+        padding-left: 20px;
+    }
+    #WatchLive {
+        margin-top: 10px;
+        margin-left: 45px;
+    }
+    #WatchLive button {
+        font-size: 18px;
+        padding: 21px 35px;
+    }
+    .another-line{
+        grid-column-start:1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================== Footer Section ==================== */
+/* #footer{
+    background-color:#152238;
+    padding-top:10px; 
+    padding-bottom:20px; 
+    text-align: center;
+}
+#footer h2{
+    color:rgb(255, 89, 89);
+    font-family: "Sofia", sans-serif;
+}
+#footer small{
+    color:aliceblue;
+} */
